@@ -1,0 +1,27 @@
+/* body {
+    
+} */
+
+
+.home-page-cards {
+    margin : auto;
+    height : 100vh;
+    width : 100vw;
+    
+}
+
+.backend-development-card {
+    width : 500px;
+}
+
+.frontend-card {
+    display : none;
+}
+
+.frontend-content-section {
+    display: none; /* Hide all sections by default */
+}
+
+.frontend-content-section.active {
+    display: block; /* Show the active section */
+}

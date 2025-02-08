@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#" style="font-size: 26px;"><img src="https://res.cloudinary.com/dopay7cbn/image/upload/v1738958962/logo_gjouhm.jpg" height = 50px alt="Logo">Dcourse</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Frontend Development
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#html-page">HTML</a>
+                        <a class="dropdown-item" href="#css-page">CSS</a>
+                        <a class="dropdown-item" href="#javascript-page">JavaScript</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Backend Development
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">MySQL</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Developer</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="container-fluid">
+        <div class="row m-auto">
+            <!-- Frontend Development Card -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  mt-3">
+                <a href="#frontend-development-page" onclick="showContent('frontendDevelopmentPage')">
+                    <div class="frontend-development-card shadow">
+                        <img src="https://th.bing.com/th/id/OIP.6Ta59-S_Ka9ipAQlVc_EZQHaEK?rs=1&pid=ImgDetMain" alt="Frontend Development">
+                        <h1>Frontend Development</h1>
+                    </div>
+                </a>
+            </div>
+            <!-- Backend Development Card -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  mt-3">
+                <a href="#backend-development-page" onclick="showContent('backendDevelopmentPage')">
+                    <div class="backend-development-card shadow">
+                        <img src="https://plopdo.com/wp-content/uploads/2021/10/backend-is-1200x808.png" alt="Backend Development" >
+                        <h1>Backend Development</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Links to Show Sections -->
+    <a href="#html-page" onclick="showContent('html-page')">HTML</a>
+    <a href="#css-page" onclick="showContent('css-page')">CSS</a>
+    <a href="#javascript-page" onclick="showContent('javascript-page')">JavaScript</a>
+    
+    <!-- About Developer Section -->
+    <div class="about-developer-card d-none">
+        <a href="#about-developer-page">
+            <h1>About Me</h1>
+        </a>
+    </div>
+    
+    <!-- Frontend Development Page -->
+    <div id = "frontendDevelopmentPage">
+        <div class="frontend-content-section" id="html-page" style="display: none;">
+            <h1>HTML Content</h1>
+            <p>This is the HTML section.</p>
+        </div>
+        <div class="frontend-content-section" id="css-page" style="display: none;">
+            <h1>CSS Content</h1>
+            <p>This is the CSS section.</p>
+        </div>
+        <div class="frontend-content-section" id="javascript-page" style="display: none;">
+            <h1>JavaScript Content</h1>
+            <p>This is the JavaScript section.</p>
+        </div>
+    </div>
+
+    <!-- Backend Development Page -->
+    <!-- <div class="container-fluid">
+        <div id="backend-development-page">
+            Backend content goes here -->
+        <!-- </div>
+    </div> -->
+
+    <!-- HTML Page Content -->
+    <!-- <div class="container-fluid">
+        <div class = "frontend-content-section" id="html-page">
+            <pre>
+                <h1>1. Basic Structure Elements</h1>
+                &lt;!DOCTYPE html&gt;: Declares the HTML version being used (e.g., HTML5).
+                &lt;html&gt;: The root element that wraps all the content of the HTML document.
+                &lt;head&gt;: Contains metadata, links to stylesheets, and scripts.
+                &lt;title&gt;: Sets the title of the document, displayed on the browser tab.
+                &lt;body&gt;: Contains the main content visible on the webpage.
+
+                <h1>2. Text Content Elements</h1>
+                &lt;h1&gt; to &lt;h6&gt;: Defines headings, &lt;h1&gt; being the largest, &lt;h6&gt; the smallest.
+                &lt;p&gt;: Defines a paragraph.
+                &lt;span&gt;: An inline container for styling or grouping text.
+                &lt;div&gt;: A block-level container used to group elements.
+                &lt;br&gt;: Inserts a line break.
+                &lt;hr&gt;: Inserts a horizontal rule (thematic break).
+
+                <h1>3. Semantic Elements</h1>
+                &lt;header&gt;: Represents introductory content or navigation links.
+                &lt;footer&gt;: Defines footer content like copyright or contact info.
+                &lt;section&gt;: Groups related content.
+                &lt;article&gt;: Represents self-contained content.
+                &lt;nav&gt;: Used for navigation links.
+                &lt;aside&gt;: Represents content aside from the main content (e.g., sidebars).
+                &lt;main&gt;: Represents the main content of the document.
+
+                <h1>4. Inline Text Formatting</h1>
+                &lt;b&gt;: Makes text bold (without importance).
+                &lt;strong&gt;: Indicates strong importance (bold).
+                &lt;i&gt;: Italicizes text (without emphasis).
+                &lt;em&gt;: Emphasizes text (italicized).
+                &lt;mark&gt;: Highlights text.
+                &lt;u&gt;: Underlines text.
+                &lt;del&gt;: Indicates deleted text (strikethrough).
+                &lt;ins&gt;: Indicates inserted text (underlined).
+                &lt;sup&gt;: Displays superscript text.
+                &lt;sub&gt;: Displays subscript text.
+
+                <h1>5. Multimedia Elements</h1>
+                &lt;img&gt;: Embeds an image. Attributes: src, alt, width, height.
+                &lt;audio&gt;: Embeds audio. Attributes: controls, src.
+                &lt;video&gt;: Embeds video. Attributes: controls, autoplay, loop, muted.
+                &lt;source&gt;: Specifies media sources for &lt;audio&gt; or &lt;video&gt;.
+                &lt;track&gt;: Provides subtitles or captions for media.
+
+                <h1>6. Link and Navigation</h1>
+                &lt;a&gt;: Creates a hyperlink. Attributes: href, target.
+                &lt;link&gt;: Links external resources like stylesheets.
+                &lt;nav&gt;: Represents a navigation menu.
+
+                <h1>7. List Elements</h1>
+                &lt;ul&gt;: Creates an unordered list.
+                &lt;ol&gt;: Creates an ordered list.
+                &lt;li&gt;: Represents list items (used inside &lt;ul&gt; or &lt;ol&gt;).
+                &lt;dl&gt;: Defines a description list.
+                &lt;dt&gt;: Represents a term in a description list.
+                &lt;dd&gt;: Represents a description of a term.
+
+                <h1>8. Table Elements</h1>
+                &lt;table&gt;: Defines a table.
+                &lt;tr&gt;: Defines a table row.
+                &lt;td&gt;: Defines a table cell.
+                &lt;th&gt;: Defines a table header cell.
+                &lt;caption&gt;: Provides a title or explanation for the table.
+                &lt;thead&gt;: Groups the header content in a table.
+                &lt;tbody&gt;: Groups the body content in a table.
+                &lt;tfoot&gt;: Groups the footer content in a table.
+
+                <h1>9. Form Elements</h1>
+                &lt;form&gt;: Defines a form for user input.
+                &lt;input&gt;: Accepts user input (types: text, password, submit, etc.).
+                &lt;textarea&gt;: Creates a multiline text input.
+                &lt;button&gt;: Creates a clickable button.
+                &lt;select&gt;: Creates a dropdown menu.
+                &lt;option&gt;: Defines an option in a dropdown.
+                &lt;label&gt;: Labels a form element.
+                &lt;fieldset&gt;: Groups related form controls.
+                &lt;legend&gt;: Provides a caption for a &lt;fieldset&gt;.
+                &lt;datalist&gt;: Provides predefined options for an &lt;input&gt; element.
+                &lt;output&gt;: Displays the result of a calculation.
+
+                <h1>10. Interactive Elements</h1>
+                &lt;details&gt;: Creates a collapsible content section.
+                &lt;summary&gt;: Provides a summary for &lt;details&gt;.
+                &lt;dialog&gt;: Represents a dialog box or modal.
+                &lt;script&gt;: Embeds JavaScript or links to external scripts.
+
+                <h1>11. Universal Attributes</h1>
+                class: Specifies one or more class names for an element. Used for styling or selecting elements with CSS/JavaScript. Example: &lt;div class="container"&gt;&lt;/div&gt;
+                id: Defines a unique identifier for an element. Used for CSS styling or targeting with JavaScript. Example: &lt;p id="intro"&gt;Hello&lt;/p&gt;
+                style: Adds inline CSS styles to an element. Example: &lt;h1 style="color: blue;"&gt;Hello&lt;/h1&gt;
+                title: Provides extra information about an element (shown as a tooltip on hover). Example: &lt;button title="Click me"&gt;Click&lt;/button&gt;
+                hidden: Hides an element without removing it from the document. Example: &lt;p hidden&gt;This is hidden&lt;/p&gt;
+                data-*: Custom attributes for storing extra data (used in JavaScript). Example: &lt;div data-user="123"&gt;User&lt;/div&gt;
+                lang: Specifies the language of the element's content. Example: &lt;p lang="en"&gt;Hello&lt;/p&gt;
+                dir: Specifies the text direction (ltr for left-to-right or rtl for right-to-left). Example: &lt;p dir="rtl"&gt;&lt;/p&gt;
+                tabindex: Specifies the tab order of an element (used for keyboard navigation). Example: &lt;button tabindex="1"&gt;First&lt;/button&gt;
+                accesskey: Defines a shortcut key to focus or activate an element. Example: &lt;button accesskey="s"&gt;Submit&lt;/button&gt;
+                draggable: Specifies whether an element is draggable. Values: true, false
+            </pre>
+        </div>
+    </div> -->
+    
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
